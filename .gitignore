@@ -12,7 +12,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 
-CNAME
 package-lock.json
 .editorconfig
 .postcssrc.js
