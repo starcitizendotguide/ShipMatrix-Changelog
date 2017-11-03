@@ -86,9 +86,7 @@
 <script>
 
 const changelogData = require('./../../assets/data/changelog.json');
-const shipsData = require('./../../assets/data/ships.json');
 const compiledFieldsData = require('./../../assets/data/compiledFields.json');
-const dataFieldsData = require('./../../assets/data/dataFields.json');
 const componentTypeFieldsData = require('./../../assets/data/componentTypeFields.json');
 
 export default {
@@ -98,9 +96,9 @@ export default {
       storage: {
         changelog_: changelogData,
       },
-      ships: shipsData,
+      ships: this.$root.ships,
       compiledFields: compiledFieldsData,
-      dataFields: dataFieldsData,
+      dataFields: this.$root.dataFields,
       componentTypeFields: componentTypeFieldsData
     }
   },
