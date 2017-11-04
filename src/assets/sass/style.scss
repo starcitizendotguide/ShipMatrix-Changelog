@@ -1,0 +1,122 @@
+/**
+*    CIGs awesome background. Thank you guys. - http://robertsspaceindustries.com/
+*/
+@font-face {
+    font-family: 'Electrolize';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Electrolize'), local('Electrolize-Regular'), url('./../fonts/Electrolize.woff2') format('woff2');
+    unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+html * {
+    font-family: 'Electrolize';
+    color: $font-color;
+}
+
+html {
+    background: url('./../images/background.jpg') repeat;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+a {
+    color: $font-color;
+
+    &:hover {
+        color: $font-color-highlighted;
+    }
+}
+
+.grid {
+    background: transparent url('./../images/gridbg_glow.png') repeat;
+}
+
+//--- Navigation
+.nav {
+    background: rgba(0, 0, 0, 0);
+}
+
+//--- Highlighting
+.button[disabled]:hover,
+.input[disabled]:hover {
+    box-shadow: none;
+    border: 1px solid rgba(0, 237, 255, 0.3);
+}
+
+code,
+.button[disabled],
+.input[disabled],
+.highlighted-element {
+    background: $background-color;
+    border: 0px solid rgba(0, 237, 255, .2);
+    color: $font-color;
+}
+
+.highlighted-element:hover,
+.highlighted-element:active,
+.highlighted-element:focus,
+.highlighted-element.is-active {
+    border-color: rgba(255, 187, 24, 0.6);
+    box-shadow: 0 0 6px rgba(76, 33, 4, 0.79), 0 0 18px rgba(255, 187, 24, 0.6);
+}
+
+.highlighted-text {
+    color: $font-color-highlighted;
+}
+
+
+//--- Table
+.dark-table table {
+    background: $background-color;
+    border: 1px solid rgba(0, 237, 255, 0.3);
+    color: $font-color;
+
+    th,
+    th:hover {
+        color: $font-color;
+        background: rgba(6, 70, 102, 1);
+    }
+
+    tr:hover {
+        color: $font-color-highlighted;
+        background: rgba(6, 70, 102, 1);
+    }
+
+}
+
+.dark-table .row {
+    color: $font-color;
+}
+
+//--- Content Box
+.content-box {
+
+    background: $background-color;
+    border: 1px solid rgba(0, 237, 255, 0.3);
+    color: #00E7FF;
+    width: 100%;
+    margin-top: 1rem;
+
+    .header {
+        background: #064666;
+        border-bottom: 2px solid #FFF;
+        padding: 0.5rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .ordered {
+      list-style: decimal;
+    }
+
+}

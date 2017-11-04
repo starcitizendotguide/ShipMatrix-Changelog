@@ -2,7 +2,7 @@
   <div class="columns">
 
     <div class="column is-4 is-offset-2">
-      <ship-column shipId="6"></ship-column>
+      <ship-column shipId="61"></ship-column>
     </div>
     <div class="column is-4">
       <ship-column shipId="5"></ship-column>

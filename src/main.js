@@ -8,31 +8,37 @@ import router from './router'
 import 'buefy/lib/buefy.css'
 import Buefy from 'buefy'
 
-require('./assets/sass/style.scss')
+//--- SCSS
+require('./assets/sass/app.scss');
 
 Vue.config.productionTip = true
 
 //--- Data
 const shipsData = require('./assets/data/ships.json');
 const dataFieldsData = require('./assets/data/dataFields.json');
-
+const shipHistoryData = require('./assets/data/shipHistory.json');
 
 //--- Components
 import ShipColumn from './components/compare/ShipColumn.vue';
+import CompareFocusField from './components/compare/CompareFocusField.vue';
 
 Vue.component('ship-column', ShipColumn);
+Vue.component('compare-focus', CompareFocusField);
+
+Vue.use(Buefy, {defaultIconPack: 'fa'})
 
 new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App, Buefy },
+  components: { App },
   data: {
     ships: shipsData,
+    shipHistory: shipHistoryData,
     dataFields: dataFieldsData,
 
     comparator: {
-      focusedField: 'Focus'
+      focusedField: null
     }
   }
 })

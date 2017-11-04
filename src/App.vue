@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="content">
+  <div id="app" class="content grid">
     <nav class="nav">
       <div class="container">
         <div class="nav-left">
