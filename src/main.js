@@ -22,8 +22,10 @@ const parentTypesData = require('./assets/data/parentTypes.json');
 //--- Components
 import ShipColumn from './components/compare/ShipColumn.vue';
 import CompareFocusField from './components/compare/CompareFocusField.vue';
+import ShipValue from './components/compare/ShipValue.vue';
 
 Vue.component('ship-column', ShipColumn);
+Vue.component('ship-value', ShipValue);
 Vue.component('compare-focus', CompareFocusField);
 
 Vue.use(Buefy, {defaultIconPack: 'fa'})

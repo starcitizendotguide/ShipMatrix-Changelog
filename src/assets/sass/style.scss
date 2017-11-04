@@ -31,6 +31,20 @@ a {
     }
 }
 
+h4 {
+  color: $font-color !important;
+}
+
+.is-muted {
+  color: grey !important;
+  opacity: 0.8;
+}
+
+.text-detail {
+  font-size: 10px;
+  line-height: 4px;
+}
+
 .grid {
     background: transparent url('./../images/gridbg_glow.png') repeat;
 }
@@ -109,6 +123,10 @@ code,
 
     .content {
         padding: 1rem;
+        text-align: justify;
+        p:not(:last-child) {
+          margin-bottom: 0px !important;
+        }
     }
 
     li {
