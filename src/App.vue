@@ -1,4 +1,5 @@
 <template>
+</div>
   <div id="app" class="content grid">
     <nav class="nav">
       <div class="container">

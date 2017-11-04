@@ -17,6 +17,7 @@ Vue.config.productionTip = true
 const shipsData = require('./assets/data/ships.json');
 const dataFieldsData = require('./assets/data/dataFields.json');
 const shipHistoryData = require('./assets/data/shipHistory.json');
+const parentTypesData = require('./assets/data/parentTypes.json');
 
 //--- Components
 import ShipColumn from './components/compare/ShipColumn.vue';
@@ -36,6 +37,7 @@ new Vue({
     ships: shipsData,
     shipHistory: shipHistoryData,
     dataFields: dataFieldsData,
+    parentTypes: parentTypesData,
 
     comparator: {
       focusedField: null

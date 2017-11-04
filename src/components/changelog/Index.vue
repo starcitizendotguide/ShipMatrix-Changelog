@@ -28,7 +28,7 @@
 
                   <ul>
                     <li v-for="(field,name) in ship.diffReport.compiledChanges">
-                      <span>{{ name }}</span>
+                      <span>{{ parentTypes[name].name }}</span>
                       <ul>
                         <li v-for="(components, componentType) in field">
                           <span>{{ componentTypeFields[componentType].name }}</span>
@@ -96,8 +96,9 @@ export default {
         changelog_: changelogData,
       },
       ships: this.$root.ships,
-      compiledFields: compiledFieldsData,
       dataFields: this.$root.dataFields,
+      parentTypes: this.$root.parentTypes,
+      compiledFields: compiledFieldsData,
       componentTypeFields: componentTypeFieldsData
     }
   },
@@ -120,7 +121,7 @@ export default {
     var first = true;
     this.storage.changelog_.forEach(function(e) {
         e.collapsed = first;
-        first = false; 
+        first = false;
     });
   }
 }
