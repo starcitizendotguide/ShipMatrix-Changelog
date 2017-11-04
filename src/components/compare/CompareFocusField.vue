@@ -1,6 +1,6 @@
 <template>
   <span @mouseover="changeFocus(focusId)" @mouseleave="changeFocus(null)"
-    :class="{'highlighted-element': isFocused}"
+    :class="{'highlighted-element is-active': isFocused}"
   >
     <slot></slot>
   </span>

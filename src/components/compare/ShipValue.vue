@@ -1,5 +1,9 @@
 <template>
-  <p>{{ dataFields[field].name }}: <compare-focus :focusId="'values.' + field"><code>{{ (ship.values[field] ? ship.values[field] : '-') + dataFields[field].unit }}</code></compare-focus></p>
+    <p class="has-text-left">
+      <compare-focus :focusId="'values.' + field">
+        {{ dataFields[field].name }}: <code>{{ (ship.values[field] ? ship.values[field] : '-') + dataFields[field].unit }}</code>
+      </compare-focus>
+    </p>
 </template>
 <script>
 
