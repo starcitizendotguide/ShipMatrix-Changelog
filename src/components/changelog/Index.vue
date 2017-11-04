@@ -103,7 +103,12 @@ export default {
   },
   methods: {
     change: function(e) {
+      var index = this.storage.changelog_.findIndex(function(entry) {
+        return e.date.localeCompare(entry.date) === 0;
+      });
+
       e.collapsed = !e.collapsed;
+      this.storage.changelog_.splice(index, 1, e);
     }
   },
   computed: {
@@ -112,7 +117,11 @@ export default {
     }
   },
   created: function() {
-    this.storage.changelog_.forEach(function(e) { e.collapsed = true; })
+    var first = true;
+    this.storage.changelog_.forEach(function(e) {
+        e.collapsed = first;
+        first = false; 
+    });
   }
 }
 </script>
