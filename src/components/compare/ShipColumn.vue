@@ -143,7 +143,6 @@
 
 export default {
   name: 'ShipColumn',
-  props: ['shipId'],
   data: function() {
     return {
       selected: null,
@@ -180,9 +179,6 @@ export default {
         }
       });
     }
-  },
-  created: function() {
-    this.setShip(this.$root.shipHistory[this.shipId]['Now']);
   },
   computed: {
     filteredDataArray() {
