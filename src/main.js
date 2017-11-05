@@ -15,9 +15,12 @@ Vue.config.productionTip = true
 
 //--- Data
 const shipsData = require('./assets/data/ships.json');
-const dataFieldsData = require('./assets/data/dataFields.json');
 const shipHistoryData = require('./assets/data/shipHistory.json');
+
+const dataFieldsData = require('./assets/data/dataFields.json');
 const parentTypesData = require('./assets/data/parentTypes.json');
+const componentTypeFieldsData = require('./assets/data/componentTypeFields.json');
+const compiledFieldsData = require('./assets/data/compiledFields.json');
 
 //--- Components
 import ShipColumn from './components/compare/ShipColumn.vue';
@@ -38,11 +41,22 @@ new Vue({
   data: {
     ships: shipsData,
     shipHistory: shipHistoryData,
+
     dataFields: dataFieldsData,
     parentTypes: parentTypesData,
+    componentTypeFields: componentTypeFieldsData,
+    compiledFields: compiledFieldsData,
 
     comparator: {
-      focusedField: null
+      focusedField: null,
+
+      collapsed: {
+        values: {
+          description: false,
+          measureAstruct: true,
+          maneuvering: true,
+        }
+      }
     }
   }
 })
