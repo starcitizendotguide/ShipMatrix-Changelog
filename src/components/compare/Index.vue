@@ -1,7 +1,7 @@
 <template>
   <div class="columns">
 
-    <div class="column is-4 is-offset-2">
+    <div class="column is-5 is-offset-1">
       <ship-column shipId="115"></ship-column>
     </div>
     <div class="column is-4">

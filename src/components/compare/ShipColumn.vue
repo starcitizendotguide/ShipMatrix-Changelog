@@ -131,9 +131,9 @@
                             <div class="content-box">
                               <div class="header"><small>{{ component.values.NAME ? component.values.NAME : "Unknown Name" }}</small></div>
                               <ul class="content">
-                                <!--<li v-for="value,key in component.values" v-if="key !== 'NAME' && key !== 'TYPE'">
-                                  <small> {{ compiledFields[key].name }}: {{value}} {{ compiledFields[key].unit }} </small>
-                                </li>-->
+                                <li v-for="value,key in component.values" v-if="key !== 'NAME' && key !== 'TYPE'">
+                                  {{ compiledFields[key].name }}: {{value}} {{ compiledFields[key].unit }}
+                                </li>
                               </ul>
                             </div>
                         </div>
