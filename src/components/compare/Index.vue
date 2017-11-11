@@ -2,10 +2,10 @@
   <div class="columns">
 
     <div class="column is-5 is-offset-1">
-      <ship-column shipId="115"></ship-column>
+      <ship-column></ship-column>
     </div>
-    <div class="column is-4">
-      <ship-column shipId="115"></ship-column>
+    <div class="column is-5">
+      <ship-column></ship-column>
     </div>
 
   </div>
@@ -14,17 +14,6 @@
 <script>
 
 export default {
-  name: 'Compare',
-  data: function() {
-    return {
-      ships: this.$root.ships,
-    }
-  },
-  methods: {
-  },
-  computed: {
-  },
-  created: function() {
-  }
+  name: 'Compare'
 }
 </script>
