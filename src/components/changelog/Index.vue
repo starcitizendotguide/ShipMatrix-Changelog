@@ -10,6 +10,16 @@
                   <li>
                     <h5><a target="_blank" :href="'https://robertsspaceindustries.com' + ships[ship.id].values['URL'] + '#holo-viewer'">{{ ships[ship.id].name }}</a></h5>
 
+                    <ul v-if="ship.diffReport.totalShipStatus != null">
+                      <li v-if="ship.diffReport.totalShipStatus == 'ADDED'">
+                        This is a new ship.
+                      </li>
+                      <li v-else-if="ship.diffReport.totalShipStatus == 'REMOVED'">
+                        This ship got removed.
+                      </li>
+                      <li v-else>#ERROR0: {{ ship.diffReport.totalShipStatus }}</li>
+                    </ul>
+
                     <ul>
                       <li v-for="field in ship.diffReport.shipFieldChanges">
                           <p v-if="field.diffType == 'ADDED'">
