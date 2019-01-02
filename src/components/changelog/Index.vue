@@ -6,6 +6,11 @@
           <div :key="entry.date" v-for="entry in changelogComputed">
             <div class="content-box highlighted-element">
               <h4 class="header is-clickable" @click="change(entry)">{{ entry.date }}</h4>
+             
+              <ul class="content" v-if="!entry.diffReports.length && entry.collapsed">
+                <li>No changes since the last update.</li>
+              </ul>
+             
               <ul class="content" v-for="ship in entry.diffReports" v-if="entry.collapsed">
                   <li>
                     <h5><a target="_blank" :href="'https://robertsspaceindustries.com' + ships[ship.id].values['URL'] + '#holo-viewer'">{{ ships[ship.id].name }}</a></h5>
