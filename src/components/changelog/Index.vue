@@ -2,11 +2,9 @@
   <div class="columns">
 
     <div class="column is-offset-2 is-8">
-
           <div :key="entry.date" v-for="entry in changelogComputed">
             <div class="content-box highlighted-element">
               <h4 class="header is-clickable" @click="change(entry)">{{ entry.date }}</h4>
-             
               <ul class="content" v-if="!entry.diffReports.length && entry.collapsed">
                 <li>No changes since the last update.</li>
               </ul>
@@ -87,7 +85,6 @@
                 </ul>
           </div>
       </div>
-
 
     </div>
 
