@@ -15,7 +15,7 @@
     "font-awesome": "^4.7.0",
     "node-sass": "^4.13.1",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.6"
+    "vue-router": "^3.3.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -40,7 +40,7 @@
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
-    "portfinder": "^1.0.25",
+    "portfinder": "^1.0.28",
     "rimraf": "^2.7.1",
     "sass-loader": "^6.0.6",
     "semver": "^5.7.1",
@@ -50,7 +50,7 @@
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^3.6.0",
-    "webpack-bundle-analyzer": "^3.6.1",
+    "webpack-bundle-analyzer": "^3.8.0",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.18.2",
     "webpack-merge": "^4.2.2"
